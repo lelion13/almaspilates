@@ -45,7 +45,7 @@ nav img:hover {
 /* Estilos existentes */
 nav {
     list-style: none;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #5c1672;
     color: #fff;
     padding: 15px;
@@ -59,6 +59,8 @@ nav img {
     height: 40px;
     border-radius: 5px;
     padding-inline: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul.menu {
@@ -88,6 +90,9 @@ nav ul.menu li a:hover {
 nav img:hover {
     transform: scale(1.5);
 }
+nav .menu-toggle {
+    display: none;
+}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 360px) {
@@ -111,5 +116,17 @@ nav img:hover {
 
     nav ul.menu.active {
         display: flex;
+    }
+}
+
+/* Estilos para pantallas mediana */
+@media (min-width: 360px){
+    nav ul.menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .logos{
+        display: flex;
+        flex-direction: row;
     }
 }
