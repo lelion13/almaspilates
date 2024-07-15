@@ -95,7 +95,7 @@ nav .menu-toggle {
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 331px) {
+@media (max-width: 360px) {
     nav ul.menu {
         display: none;
         flex-direction: column;
@@ -120,7 +120,7 @@ nav .menu-toggle {
 }
 
 /* Estilos para pantallas mediana */
-@media (min-width: 360px){
+@media (min-width: 361px){
     nav ul.menu {
         display: flex;
         flex-direction: row;
