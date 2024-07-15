@@ -1,48 +1,3 @@
-/* nav {
-    list-style: none;
-    flex-direction: column;
-    background-color: #5c1672;
-    color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav img {
-    height: 40px;
-    border-radius: 5px;
-    padding-inline: 5px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color:#491857;
-    transform: scale(1.5);
-}
-
-nav img:hover {
-    transform: scale(1.5);
-} */
-/* Estilos existentes */
 nav {
     list-style: none;
     flex-direction: row;
@@ -50,7 +5,7 @@ nav {
     color: #fff;
     padding: 15px;
     margin-bottom: 10px;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -96,6 +51,9 @@ nav img:hover {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 472px) {
+    /* nav{
+        display: none;
+    } */
     nav ul.menu {
         display: none;
         flex-direction: column;
@@ -121,9 +79,13 @@ nav img:hover {
 
 /* Estilos para pantallas mediana */
 @media (min-width: 473px){
+    nav{
+        display: flex;
+    }
+
     nav .menu-toggle {
     display: none;
-}
+    }
     nav ul.menu {
         display: flex;
         flex-direction: row;
