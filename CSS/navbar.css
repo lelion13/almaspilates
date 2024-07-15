@@ -50,7 +50,7 @@ nav img:hover {
 } */
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 472px) {
+@media screen and (max-width: 472px) {
     /* nav{
         display: none;
     } */
@@ -78,7 +78,7 @@ nav img:hover {
 }
 
 /* Estilos para pantallas mediana */
-@media (min-width: 473px){
+@media screen and (min-width: 473px){
     nav{
         display: flex;
     }
