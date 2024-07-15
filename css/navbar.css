@@ -1,0 +1,97 @@
+nav {
+    list-style: none;
+    flex-direction: row;
+    background-color: #5c1672;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+    border-radius: 5px;
+    padding-inline: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul.menu li {
+    display: inline;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul.menu li a:hover {
+    background-color: #491857;
+    transform: scale(1.5);
+}
+
+nav img:hover {
+    transform: scale(1.5);
+}
+/* nav .menu-toggle {
+    display: none;
+} */
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 472px) {
+    /* nav{
+        display: none;
+    } */
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav .logos a img {
+        display: none;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        background-color: #5c1672;
+        color: #fff;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav ul.menu.active {
+        display: flex;
+    }
+}
+
+/* Estilos para pantallas mediana */
+@media screen and (min-width: 473px){
+    nav{
+        display: flex;
+    }
+
+    nav .menu-toggle {
+    display: none;
+    }
+    nav ul.menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .logos{
+        display: flex;
+        flex-direction: row;
+    }
+}
