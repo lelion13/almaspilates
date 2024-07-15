@@ -90,9 +90,9 @@ nav ul.menu li a:hover {
 nav img:hover {
     transform: scale(1.5);
 }
-nav .menu-toggle {
+/* nav .menu-toggle {
     display: none;
-}
+} */
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 472px) {
@@ -120,7 +120,10 @@ nav .menu-toggle {
 }
 
 /* Estilos para pantallas mediana */
-@media (min-width: 373px){
+@media (min-width: 473px){
+    nav .menu-toggle {
+    display: none;
+}
     nav ul.menu {
         display: flex;
         flex-direction: row;
