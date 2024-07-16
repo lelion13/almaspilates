@@ -1,0 +1,49 @@
+@import url(./navbar.css);
+@import url(./footer.css);
+
+body{
+    margin: 0px;
+    font-family: 'roboto', sans-serif; /* Aplicar la fuente a todo el documento */
+}
+#cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+#cards div{
+    padding: 10px;
+    border: black 2px solid;
+    border-radius: 8px;
+    background: white;
+    filter: drop-shadow(5px 4px 4px black);
+    transition: all 0.5s;
+    opacity: 0.7;
+    position: relative;
+}
+#cards .cards-img {
+    width: 100%;
+    margin: auto;
+}
+
+/*Pantallas de mas de 473px*/
+@media screen and (min-width: 473px) {
+    .cards-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #cards div{
+        width: 35%;
+    }
+
+    #cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+}
