@@ -1,10 +1,7 @@
 @import url(./navbar.css);
 @import url(./footer.css);
+@import url(./general.css);
 
-body{
-    margin: 0px;
-    font-family: 'roboto', sans-serif; /* Aplicar la fuente a todo el documento */
-}
 #cards{
     display: flex;
     gap: 20px;

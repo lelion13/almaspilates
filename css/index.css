@@ -1,7 +1,7 @@
-body{
-margin: 0px;
-font-family: 'roboto', sans-serif; /* Aplicar la fuente a todo el documento */
-}
+@import url(./navbar.css);
+@import url(./footer.css);
+@import url(./general.css);
+
 /*###############Seccion 1####################*/
 .seccion1 {
     width: 100%;
