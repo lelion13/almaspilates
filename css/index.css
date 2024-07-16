@@ -1,5 +1,6 @@
 body{
 margin: 0px;
+font-family: 'roboto', sans-serif; /* Aplicar la fuente a todo el documento */
 }
 /*###############Seccion 1####################*/
 .seccion1 {
