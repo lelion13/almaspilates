@@ -39,7 +39,7 @@ nav ul.menu li a {
 
 nav ul.menu li a:hover {
     background-color: #491857;
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
 }
 
 nav img:hover {
@@ -89,6 +89,10 @@ nav img:hover {
     nav ul.menu {
         display: flex;
         flex-direction: row;
+    }
+    nav ul.menu li a:hover {
+        /* background-color: #491857; */
+        transform: scale(1.5);
     }
     .logos{
         display: flex;
