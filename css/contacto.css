@@ -1,11 +1,11 @@
 @import url(./general.css);
-@import url(./header.css);
+@import url(./navbar.css);
 @import url(./footer.css);
 
 form {
     display: flex;
     flex-direction: column;
-    /* width: 500px; */
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -29,4 +29,32 @@ form button {
     margin: 5px 10px;
     width: 90%;
 }
+.contacto-boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contacto-boton input {
+    width: 40%;
+}
+#contacto {
+    margin-top: 50px;
+}
 
+/*Pantallas de mas de 473px*/
+@media screen and (min-width: 473px){
+    form{
+        width: 60%;
+    }
+    form button {
+        width: 50%;
+    }
+    .contacto-boton {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto-boton input {
+        width: 50%;
+    }
+}
