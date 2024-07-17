@@ -16,7 +16,7 @@
     background: white;
     filter: drop-shadow(5px 4px 4px black);
     transition: all 0.5s;
-    opacity: 0.7;
+    /* opacity: 5; */
     position: relative;
 }
 #cards .cards-img {
@@ -24,6 +24,9 @@
     margin: auto;
 }
 
+#cards div p,#cards div h2{
+    text-align: center;
+}
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px) {
     .cards-img {
