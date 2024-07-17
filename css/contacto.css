@@ -1,0 +1,10 @@
+@import url(./general.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
