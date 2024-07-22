@@ -10,11 +10,12 @@
 .carrousel{
     width: 100%;
     align-items: center;
-    
+    display: grid;
+    justify-content: center;    
 }
 
 .conteCarrousel{
-    width: 90%;
+    width: 100%;
     height: 50vh;
     overflow: hidden;
 }
