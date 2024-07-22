@@ -13,11 +13,12 @@ form label {
     margin-bottom: 8px;
 }
 
-form input, form textarea {
+form input, form textarea, form select, form .genero {
     margin-bottom: 16px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    /* background-color:  #f5e1fc9c */
 }
 
 form button {
@@ -46,7 +47,10 @@ form button {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 16px;
 }
+
+
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px){
     form{

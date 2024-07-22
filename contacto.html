@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/contacto.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('Z--Qe2Rp7OwGvyACm')</script>
     <title>Almas</title>
 </head>
 <body>
@@ -27,10 +29,9 @@
             <button class="menu-toggle">☰</button>
         </nav>
     </header>
-    <script src="./js/navbar.js"></script>
     <main>
         <section id="contacto">
-            <form onsubmit="sendMail(); return false;">
+            <form id="formulario">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -51,11 +52,22 @@
                     <label for="femenino">Femenino</label>
                 </fieldset>
 
+                <label for="medio">Por que medio nos conociste?</label>
+                <select name="medio" id="medio" >
+                    <option value="" disabled selected>Seleccione una opcion</option>
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="conocido">Conocido</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
                 <div class="contacto-boton">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="enviar" name="enviar">
                     <input type="reset" value="Cancelar">
                 </div>
                 </form>
@@ -66,5 +78,7 @@
             <p>&copy; 2024 Leandro Lion -- Luis Guillon</p>
         </div>
     </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/correo.js"></script>
 </body>
 </html>
