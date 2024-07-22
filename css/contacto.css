@@ -41,6 +41,12 @@ form button {
     margin-top: 50px;
 }
 
+.genero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px){
     form{
