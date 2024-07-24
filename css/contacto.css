@@ -10,7 +10,7 @@ main{
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* justify-items: center;*/
 }
 
@@ -65,15 +65,25 @@ form button {
 
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px){
-        main{
+    main{
         grid-template-columns: repeat(2, 1fr);
     }
-#section-mapa{
-    display: flex;
-    /* position: relative; */
-    flex-direction: column;
-    align-items: center;
-}
+    #section-mapa{
+        display: flex;
+        /* position: relative; */
+        flex-direction: column;
+        align-items: center;
+    }
+    #mapa{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #mapa div{
+        margin-top: 60px;
+    }        
     form{
         width: 60%;
     }
@@ -88,7 +98,7 @@ form button {
     .contacto-boton input {
         width: 50%;
     }
-    #contacto {
+    #contacto,  #mapa{
         margin-top: 50px;
     }
     form input, form textarea, form select, form .genero {
