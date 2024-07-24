@@ -1,14 +1,19 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 25px 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
     background-color:  #f5e1fc9c
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-main {
+/* main {
     flex: 1;
     margin-bottom: 60px;
-}
+} */
