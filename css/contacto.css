@@ -2,6 +2,18 @@
 @import url(./navbar.css);
 @import url(./footer.css);
 
+main{
+    display: grid;
+    grid-template-rows:auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: 250px; */
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* justify-items: center;*/
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -14,7 +26,7 @@ form label {
 }
 
 form input, form textarea, form select, form .genero {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -39,7 +51,7 @@ form button {
     width: 40%;
 }
 #contacto {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .genero{
@@ -53,6 +65,15 @@ form button {
 
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px){
+        main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+#section-mapa{
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    align-items: center;
+}
     form{
         width: 60%;
     }
@@ -66,5 +87,15 @@ form button {
     }
     .contacto-boton input {
         width: 50%;
+    }
+    #contacto {
+        margin-top: 50px;
+    }
+    form input, form textarea, form select, form .genero {
+        margin-bottom: 16px;
+        /* padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px; */
+        /* background-color:  #f5e1fc9c */
     }
 }
