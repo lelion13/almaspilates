@@ -1,7 +1,7 @@
 nav {
     list-style: none;
     flex-direction: row;
-    background-color: #5c1672;
+    background-color: #bd7cd1;
     color: #fff;
     padding: 15px;
     margin-bottom: 10px;
@@ -38,8 +38,10 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-    background-color: #491857;
+    /* background-color: #491857; */
+    background-color: #7c7a7c9a;
     /* transform: scale(1.5); */
+    border-radius: 50px;
 }
 
 nav img:hover {
@@ -92,7 +94,8 @@ nav img:hover {
     }
     nav ul.menu li a:hover {
         /* background-color: #491857; */
-        transform: scale(1.5);
+        transform: scale(1.2);
+        border-radius: 50px;
     }
     .logos{
         display: flex;
