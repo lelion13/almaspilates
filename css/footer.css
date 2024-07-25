@@ -8,3 +8,14 @@ footer{
     bottom: 0;
     height: 25px;
 }
+
+#footer-whatsapp{
+    position: fixed;
+    left: 98%;
+    top: 96.5%;
+}
+
+/* #footer-whatsapp img{
+    width: 40px;
+    height: 40px;
+} */
