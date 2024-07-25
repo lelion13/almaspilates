@@ -3,7 +3,7 @@ nav {
     flex-direction: row;
     background-color: #bd7cd1;
     color: #fff;
-    padding: 15px;
+    padding: 9px 25px;
     margin-bottom: 10px;
     
     justify-content: space-between;
@@ -46,6 +46,7 @@ nav ul.menu li a:hover {
 
 nav img:hover {
     transform: scale(1.5);
+    border-radius: 50px;
 }
 /* nav .menu-toggle {
     display: none;
