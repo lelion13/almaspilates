@@ -1,12 +1,4 @@
-
-// Esto lo copie desde el template de emailjs
-// emailjs.send("service_o5e397c","template_gz3479r",{
-//     to_name: "lelion13@gmail.com",
-//     from_name: "llion@cpmgsa.ar",
-//     message: "hola",
-//     reply_to: "lelion_13@hotmail.com",
-//     });
-
+//envio de correo
 const btn = document.getElementById('enviar');
 
 document.getElementById('formulario')
@@ -27,4 +19,22 @@ document.getElementById('formulario')
       btn.value = 'Enviar';
       alert(JSON.stringify(err));
     });
+});
+
+//valido formato de correo
+
+document.getElementById('email').addEventListener('blur', function() {
+  var emailField = document.getElementById('email');
+  var emailError = document.getElementById('emailError');
+  var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+
+  if (!emailPattern.test(emailField.value)) {
+      emailError.style.display = 'inline';
+      emailField.style.borderColor = 'red';
+      emailField.style.marginBottom = 0;
+  } else {
+      emailError.style.display = 'none';
+      emailField.style.borderColor = 'initial';
+      emailField.style.marginBottom = '16px';
+  }
 });
