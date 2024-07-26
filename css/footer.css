@@ -1,4 +1,7 @@
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
     background-color: #767177;
     color: #fff;
     text-align: center;
@@ -9,13 +12,16 @@ footer{
     height: 25px;
 }
 
-#footer-whatsapp{
-    position: fixed;
-    left: 98%;
-    top: 96.5%;
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
-/* #footer-whatsapp img{
-    width: 40px;
-    height: 40px;
-} */
+.footer-container p{
+    margin-left: calc(100vw / 50);
+}
+
+.footer-whatsapp{
+    margin-right: calc(100vw/50);
+}
