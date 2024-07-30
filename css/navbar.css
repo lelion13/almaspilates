@@ -82,7 +82,10 @@ nav img:hover {
         font-size: 24px;
         cursor: pointer;
     }
-
+    .menu-toggle img {
+        width: 30px;
+        height: 30px;
+    }
     nav ul.menu.active {
         display: flex;
     }
