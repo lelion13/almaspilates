@@ -24,8 +24,6 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: rem; /* Adjust padding as needed */
-    
 }
 
 nav ul.menu {

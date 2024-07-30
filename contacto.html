@@ -12,30 +12,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./about.html">Galeria</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <div class="logos">
-                <a href="#home">
-                    <img src="./img/logoAlmas.png" alt="Logo Almas">
-                </a>
-            </div>
-            <button class="menu-toggle">☰</button>
-        </nav>
-    </header>
+        <div class="logos">
+          <a href="#home">
+              <img src="./img/logoAlmas.png" alt="Logo Almas" class="proportional-image">
+          </a>
+        </div>
+          <nav>
+              <ul class="menu">
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="./about.html">Galeria</a></li>
+                  <li><a href="./servicios.html">Servicios</a></li>
+                  <li><a href="./contacto.html">Contacto</a></li>
+              </ul>
+              
+              <button class="menu-toggle">☰</button>
+          </nav>
+      </header>
     <main class="contacto-main">
         <section id="contacto">
             <form id="formulario">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
+                <span id="nameError" style="color: red; margin: 0; padding: 0; font-size: smaller; display: none;">Formato de nombre no válido! Debe ingresar solo texto..</span>
                 
                 <label for="surname">Apellido:</label>
                 <input type="text" id="surname" name="surname" required>
-                
+                <span id="surnameError" style="color: red; margin: 0; padding: 0; font-size: smaller; display: none;">Formato de apellido no válido! Debe ingresar solo texto..</span>
+
                 <label for="telefono">Telefono:</label>
                 <input type="tel" id="telefono" name="telefono" pattern="(\d{3}-\d{2}-\d{8})|(\d{10})" required>
                 
@@ -67,7 +70,7 @@
                 
                 <div class="contacto-boton">
                     <input type="submit" value="Enviar" id="enviar" name="enviar">
-                    <input type="reset" value="Cancelar">
+                    <input type="reset" value="Cancelar" id="cancelar" name="cancelar">
                 </div>
                 </form>
         </section>
