@@ -60,6 +60,42 @@ nav img:hover {
     display: none;
 } */
 
+/*submenu*/
+/* Ocultar el submenú por defecto */
+nav ul.menu li.has-submenu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #bd7cd1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mostrar el submenú cuando se haga hover sobre el elemento principal */
+nav ul.menu li.has-submenu:hover .submenu,
+nav ul.menu li.has-submenu.active .submenu {
+    display: block;
+    z-index: 1000;
+}
+
+nav ul.menu li.has-submenu .submenu li {
+    margin: 0;
+}
+
+nav ul.menu li.has-submenu .submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+}
+
+nav ul.menu li.has-submenu .submenu li a:hover {
+    background-color: #7c7a7c9a;
+    border-radius: 50px;
+}
+
+/*-------*/
+
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 472px) {
     /* nav{
@@ -93,6 +129,8 @@ nav img:hover {
         display: none;
     }
 }
+
+
 
 /* Estilos para pantallas mediana */
 @media screen and (min-width: 473px){

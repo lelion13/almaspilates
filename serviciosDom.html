@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="stylesheet" href="./css/serviciosDom.css">
     <script src="https://kit.fontawesome.com/4fad0838bf.js" crossorigin="anonymous"></script>
     <title>Almas</title>
 </head>
@@ -19,7 +19,14 @@
               <ul class="menu">
                   <li><a href="./index.html">Inicio</a></li>
                   <li><a href="./about.html">Galeria</a></li>
-                  <li><a href="./servicios.html">Servicios</a></li>
+                  <li class="has-submenu">
+                    <a href="#">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="./servicios.html">Servicios sin DOM</a></li>
+                        <li><a href="./serviciosDom.html">Servicios con DOM</a></li>
+                    </ul>
+                </li>
+                  <!-- <li><a href="./servicios.html">Servicios</a></li> -->
                   <li><a href="./contacto.html">Contacto</a></li>
               </ul>
               
@@ -30,6 +37,38 @@
           </nav>
       </header>
     <main>
+        <form id="agregarCard" action="">
+            <label for="nombre">Nombre del servicio:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="descripcion">Descripción</label>
+            <input type="text" name="descripcion" id="descripcion" required>
+            <label for="urlCard">Url de la imagen</label>
+            <input type="url" name="urlCard" id="urlCard" placeholder="https://picsum.photos/200">
+            <button id="addCardBtn">Agregar Nueva Tarjeta</button>
+        </form>
+        <form id="modificarCard" action="">
+            <label for="bordeColor">Color del borde:</label>
+            <input type="color" name="bordeColor" id="bordeColor" required>
+            <label for="bordeAncho">Grosor de borde:</label>
+            <input type="range" name="bordeAncho" id="bordeAncho" min="1" max="10" required>
+            <span id="valorBorde">10px</span>
+            
+            <script>
+                //Para actualizar el valor seleccionado en pixel
+                const slider = document.getElementById('bordeAncho');
+                const output = document.getElementById('valorBorde');
+
+                // Muestra el valor inicial del slider
+                output.textContent = slider.value + 'px';
+
+                // Actualiza el valor en tiempo real mientras se mueve la barra
+                slider.addEventListener('input', function() {
+                    output.textContent = slider.value + 'px';
+                });
+            </script>
+
+            <button id="modificarCardBtn">Modificar borde</button>
+        </form>
         <section id="cards">
             <div>
                 <img class="cards-img" src="./img/pilates.jpg" alt="Imagen de pilates">
@@ -64,5 +103,6 @@
         </div>
     </footer>
     <script src="./js/navbar.js"></script>
+    <script src="./js/card.js"></script> 
 </body>
 </html>
