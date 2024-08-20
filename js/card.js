@@ -40,12 +40,20 @@ document.addEventListener("DOMContentLoaded", function() {
         // const title = document.getElementById("card-title").value;
         // const description = document.getElementById("card-description").value;
         // const imageUrl = document.getElementById("card-image").value || "https://picsum.photos/200";
-        const nombre = document.getElementById("nombre").value;
-        const descripcion = document.getElementById("descripcion").value;
+        
+        const nombre = document.getElementById("nombre").value.trim();
+        const descripcion = document.getElementById("descripcion").value.trim();
         const urlCard = document.getElementById("urlCard").value || "https://picsum.photos/200";
+        console.log("Nombre:", nombre);
+        console.log("Descripción:", descripcion);       
+        if (nombre === "" || descripcion==="") {
+            alert("Por favor, completa todos los campos antes de continuar.");
+            return; // retorno porque esta vacio alguno de los campos
+        }
+        
         crearCard(urlCard, nombre, descripcion);
     });
-    
+
 //modificar borde de los divs
     document.getElementById('modificarCardBtn').addEventListener('click', function(event) {
         event.preventDefault();
