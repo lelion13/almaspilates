@@ -9,6 +9,9 @@
     gap: 5px;
 }
 
+.input-error {
+    border: 2px solid red;
+}
 
 /*no lo use al final, pero lo dejo por las dudas.. es para estilo del boton de sweetAlert2*/
 /* .custom-button {

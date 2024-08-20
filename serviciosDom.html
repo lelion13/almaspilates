@@ -20,10 +20,12 @@
               <ul class="menu">
                   <li><a href="./index.html">Inicio</a></li>
                   <li><a href="./about.html">Galeria</a></li>
+                  <!-- Agregue un submenu para que se vea la pagina original de serivicios y la que cuenta con la manipulacion del dom -->
                   <li class="has-submenu">
                     <a href="#">Servicios</a>
                     <ul class="submenu">
                         <li><a href="./servicios.html">Servicios sin DOM</a></li>
+                        <!-- esta pagina cuenta con la manipulacion del dom -->
                         <li><a href="./serviciosDom.html">Servicios con DOM</a></li>
                     </ul>
                 </li>
@@ -38,6 +40,7 @@
           </nav>
       </header>
     <main>
+        <!-- formulario para agregar las cards -->
         <form id="agregarCard" action="">
             <label for="nombre">Nombre del servicio:</label>
             <input type="text" name="nombre" id="nombre" required>
@@ -47,11 +50,12 @@
             <input type="url" name="urlCard" id="urlCard" placeholder="https://picsum.photos/200">
             <button id="addCardBtn">Agregar Nueva Tarjeta</button>
         </form>
+        <!-- formulario para cambiar el grosor y color del borde de las cards -->
         <form id="modificarCard" action="">
             <label for="bordeColor">Color del borde:</label>
             <input type="color" name="bordeColor" id="bordeColor" required>
             <label for="bordeAncho">Grosor de borde:</label>
-            <input type="range" name="bordeAncho" id="bordeAncho" min="1" max="10" required>
+            <input type="range" name="bordeAncho" id="bordeAncho" min="1" max="10" value="2" required>
             <span id="valorBorde">10px</span>
             
             <script>
