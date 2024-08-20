@@ -10,6 +10,20 @@
 }
 
 
+/*no lo use al final, pero lo dejo por las dudas.. es para estilo del boton de sweetAlert2*/
+/* .custom-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* .custom-button:hover {
+    background-color: #45a049;
+} */
 
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px) {

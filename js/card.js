@@ -31,30 +31,42 @@ document.addEventListener("DOMContentLoaded", function() {
         cardsContainer.appendChild(card);
     }
 
-    // Ejemplo de uso: agregar una nueva tarjeta
-    // crearCard("./img/nuevaImagen.jpg", "Nuevo Servicio", "Descripción del nuevo servicio.");
     // crearCard("./img/nuevaImagen.jpg", "Nuevo Servicio", "Descripción del nuevo servicio.");
     document.getElementById('addCardBtn').addEventListener('click', function(event) {
         event.preventDefault();
         // alert("hola");
-        // const title = document.getElementById("card-title").value;
-        // const description = document.getElementById("card-description").value;
-        // const imageUrl = document.getElementById("card-image").value || "https://picsum.photos/200";
         
         const nombre = document.getElementById("nombre").value.trim();
         const descripcion = document.getElementById("descripcion").value.trim();
         const urlCard = document.getElementById("urlCard").value || "https://picsum.photos/200";
         console.log("Nombre:", nombre);
         console.log("Descripción:", descripcion);       
-        if (nombre === "" || descripcion==="") {
-            alert("Por favor, completa todos los campos antes de continuar.");
-            return; // retorno porque esta vacio alguno de los campos
+        if (nombre === '' || descripcion=== '') {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Campo vacío',
+                text: 'Debes colocar un titulo y descripcion para poder crear un nuevo servicio!',
+                confirmButtonText: 'Aceptar',
+                confirmButtonColor: '#bd7cd1'
+                // customClass: {
+                //     confirmButton: 'custom-button'  // Clase personalizada para el botón
+                //   }
+            }).then(() => {
+                // Si el campo "nombre" está vacío, enfoca en él. De lo contrario, enfoca en "descripcion".
+                if (nombre === '') {
+                    document.getElementById('nombre').focus();
+                } else if (descripcion === '') {
+                    document.getElementById('descripcion').focus();
+                }
+            });
+            // document.getElementById('nombre').focus();
+            return;
         }
         
         crearCard(urlCard, nombre, descripcion);
     });
 
-//modificar borde de los divs
+//modificar borde de los divs que contienen las cards
     document.getElementById('modificarCardBtn').addEventListener('click', function(event) {
         event.preventDefault();
         const bordeColor = document.getElementById("bordeColor").value;
